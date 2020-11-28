@@ -58,7 +58,7 @@ def enterKeys(input, keys):
 
 def selectFromDropdown(dropdown, text):
     try:
-        driver.find_element_by_xpath(dropdown + "/option[text()='" + text + "']")
+        driver.find_element_by_xpath(dropdown + "/option[text()='" + text + "']").click()
         pass
     except Exception:
         time.sleep(1)
